@@ -1,15 +1,8 @@
-function isPalindrome(str: string){
-    let i : number = 0; 
-    let j : number = str.length - 1;
-    while(i < j){
-   if(str.charAt(i) != str.charAt(j))
-       return false;
-       i++;
-       j--;
-
-    }
-    return true;
+function pieceCake(a:number, b: number, c:number){
+    if (b * c <= a) {
+            return true;
+        }
+        return false;
 }
 
-console.log(isPalindrome("patap"));
-console.log(isPalindrome("tanap"));
+console.log(pieceCake(11,5,2));
