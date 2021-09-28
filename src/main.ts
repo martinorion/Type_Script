@@ -1,8 +1,15 @@
-function Triangle(a:number, b:number,c:number):boolean {
-    if(a + b > c && b + c > a && a + c > b) {
-               return true;
-   }
-   return false;
-   }
-   
-   console.log(Triangle(2,5,4))
+function isPalindrome(str: string){
+    let i : number = 0; 
+    let j : number = str.length - 1;
+    while(i < j){
+   if(str.charAt(i) != str.charAt(j))
+       return false;
+       i++;
+       j--;
+
+    }
+    return true;
+}
+
+console.log(isPalindrome("patap"));
+console.log(isPalindrome("tanap"));
