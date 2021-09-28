@@ -1,4 +1,13 @@
-function Snail(heightStair: number, lengthStair : number, total: number){
-    console.log((total / heightStair) *(lengthStair + heightStair ));
+function Numbers(a: number, b: number, c:number){
+    if(a == b && a != c || b == c && c != a || a == c && c != b){
+            console.log(2);
+        }
+         else if(a != b && a != c && b != c){
+            console.log(0);
+        }
+        else if (a == b && a == c){
+            console.log(3);
+        }
 }
-Snail(0.2, 0.4, 100);
+
+Numbers(1,2,1);
